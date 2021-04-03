@@ -1,12 +1,15 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.github.creeper123123321.tormc.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "MixinClientConnection",
+    "MixinClientConnectionChannelInit",
+    "MixinConnectScreenThread",
+    "MixinMultiplayerServerListPinger"
   ],
   "injectors": {
     "defaultRequire": 1
